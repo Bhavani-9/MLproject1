@@ -24,3 +24,6 @@ setup(
     packages=find_packages(),
     install_requires=get_requirements('requirements.txt')
 )
+
+# C:\ProgramData\Anaconda3\Scripts\activate.bat
+# conda activate venv/
