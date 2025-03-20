@@ -1,5 +1,6 @@
-from setuptools import find_packages, setup
+from setuptools import find_packages,setup
 from typing import List
+import os
 
 HYPEN_E_DOT = '-e .'
 
@@ -22,7 +23,7 @@ setup(
     author='Bhavani',
     author_email='bhavanibh612@gmail.com',
     packages=find_packages(),
-    install_requires=get_requirements('requirements.txt')
+    install_requires=get_requirements(os.path.join(os.path.dirname(__file__), 'requirements.txt'))
 )
 
 # C:\ProgramData\Anaconda3\Scripts\activate.bat
